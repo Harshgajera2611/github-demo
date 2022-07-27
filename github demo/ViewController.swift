@@ -20,8 +20,19 @@ class ViewController: UIViewController {
         view.addSubview(label)
         navigationController?.title = "github demo"
         navigationController?.isNavigationBarHidden = true
+        
+        let button = UIButton()
+        button.setTitle("check", for: .normal)
+        button.backgroundColor = .green
+        button.frame = CGRect(x: 200, y: 200, width: 100, height: 100)
+        button.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
+        view.addSubview(button)
     }
 
+    @objc
+    func clickButton() {
+        print("check")
+    }
 
 }
 
