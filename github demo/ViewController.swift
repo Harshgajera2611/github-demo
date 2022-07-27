@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         label.numberOfLines = 0
         label.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         view.addSubview(label)
-        navigationController?.title = "github demo"
+        navigationController?.title = "demo of github"
         navigationController?.isNavigationBarHidden = true
         
         let button = UIButton()
