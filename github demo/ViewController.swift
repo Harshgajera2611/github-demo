@@ -31,8 +31,9 @@ class ViewController: UIViewController {
         view.addSubview(button)
         
         let image = UIImageView()
-        image.frame = CGRect(x: 100, y: 400, width: 150, height: 150)
+        image.frame = CGRect(x: 11, y: 400, width: 392, height: 150)
         image.image = UIImage(named: "game")
+        image.contentMode = .scaleToFill
         view.addSubview(image)
         
         //MARK: - call set up button function
