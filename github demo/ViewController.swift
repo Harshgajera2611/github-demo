@@ -32,7 +32,10 @@ class ViewController: UIViewController {
         image.frame = CGRect(x: 100, y: 400, width: 150, height: 150)
         image.image = UIImage(named: "game")
         view.addSubview(image)
-        
+        self.setUpButton()
+    }
+    
+    func setUpButton() {
         let saveButton = UIButton()
         saveButton.frame = CGRect(x: 0, y: 600, width: 500, height: 50)
         saveButton.backgroundColor = .green
