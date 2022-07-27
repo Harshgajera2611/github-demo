@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let label = UILabel()
+        var label = UILabel()
         label.text = "hello"
         label.backgroundColor = .green
         label.textAlignment = .center
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
 
     @objc
     func clickButton() {
-        print("check")
+        print("save")
     }
 
 }
