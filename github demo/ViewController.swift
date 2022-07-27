@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     
     func setUpButton() {
         let saveButton = UIButton()
-        saveButton.frame = CGRect(x: 0, y: 600, width: 500, height: 50)
+        saveButton.frame = CGRect(x: 11, y: 600, width: 392, height: 50)
         saveButton.backgroundColor = .green
         saveButton.setTitle("save", for: .normal)
         saveButton.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
