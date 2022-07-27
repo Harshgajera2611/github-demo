@@ -38,6 +38,8 @@ class ViewController: UIViewController {
         saveButton.backgroundColor = .green
         saveButton.setTitle("save", for: .normal)
         saveButton.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
+        saveButton.setImage(UIImage(named: "game"), for: .normal)
+        saveButton.contentMode = .scaleAspectFit
         view.addSubview(saveButton)
     }
 
