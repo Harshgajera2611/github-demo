@@ -34,6 +34,8 @@ class ViewController: UIViewController {
         image.frame = CGRect(x: 100, y: 400, width: 150, height: 150)
         image.image = UIImage(named: "game")
         view.addSubview(image)
+        
+        //MARK: - call set up button function
         self.setUpButton()
         
         let textField = UITextField()
