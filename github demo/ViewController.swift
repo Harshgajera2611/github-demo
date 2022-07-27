@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         let button = UIButton()
         button.setTitle("check", for: .normal)
-        button.backgroundColor = .green
+        button.backgroundColor = .lightGray
         button.frame = CGRect(x: 200, y: 200, width: 100, height: 100)
         button.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
         view.addSubview(button)
