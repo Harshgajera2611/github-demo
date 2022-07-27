@@ -27,6 +27,11 @@ class ViewController: UIViewController {
         button.frame = CGRect(x: 200, y: 200, width: 100, height: 100)
         button.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
         view.addSubview(button)
+        
+        let image = UIImageView()
+        image.frame = CGRect(x: 100, y: 400, width: 150, height: 150)
+        image.image = UIImage(named: "game")
+        view.addSubview(image)
     }
 
     @objc
