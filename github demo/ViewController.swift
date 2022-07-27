@@ -39,9 +39,9 @@ class ViewController: UIViewController {
         self.setUpButton()
         
         let textField = UITextField()
-        textField.frame = CGRect(x: 0, y: 50, width: view.frame.width, height: 50)
+        textField.frame = CGRect(x: 11, y: 83, width: 392, height: 50)
         textField.placeholder = "enter name"
-        textField.borderStyle = .line
+        textField.borderStyle = .roundedRect
         textField.textAlignment = .left
         view.addSubview(textField)
     }
