@@ -9,9 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var label = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let label = UILabel()
+        
         label.text = "hello"
         label.backgroundColor = .green
         label.textAlignment = .center
@@ -34,6 +35,13 @@ class ViewController: UIViewController {
         image.image = UIImage(named: "game")
         view.addSubview(image)
         self.setUpButton()
+        
+        let textField = UITextField()
+        textField.frame = CGRect(x: 0, y: 50, width: view.frame.width, height: 50)
+        textField.placeholder = "enter name"
+        textField.borderStyle = .line
+        textField.textAlignment = .left
+        view.addSubview(textField)
     }
     
     func setUpButton() {
@@ -51,6 +59,7 @@ class ViewController: UIViewController {
     @objc
     func clickButton() {
         print("click")
+        label.text = "ok work"
     }
 
 }
