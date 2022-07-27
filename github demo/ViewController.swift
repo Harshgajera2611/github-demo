@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         button.backgroundColor = .lightGray
         button.frame = CGRect(x: 200, y: 200, width: 100, height: 100)
         button.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
+        button.tag = 1
         view.addSubview(button)
         
         let image = UIImageView()
@@ -43,12 +44,13 @@ class ViewController: UIViewController {
         saveButton.addTarget(self, action: #selector(clickButton), for: .touchUpInside)
         saveButton.setImage(UIImage(named: "game"), for: .normal)
         saveButton.contentMode = .scaleAspectFit
+        saveButton.tag = 2
         view.addSubview(saveButton)
     }
 
     @objc
     func clickButton() {
-        print("save")
+        print("click")
     }
 
 }
