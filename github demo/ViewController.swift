@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         image.contentMode = .scaleToFill
         view.addSubview(image)
         
-        //MARK: - call set up button function
+        //MARK: - call function
         self.setUpButton()
         
         let textField = UITextField()
