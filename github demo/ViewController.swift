@@ -12,16 +12,7 @@ class ViewController: UIViewController {
     var label = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        label.text = "hello"
-        label.textColor = .white
-        label.backgroundColor = .green
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
-        label.layer.cornerRadius = 10
-        label.layer.masksToBounds = true
-        view.addSubview(label)
+        setUpLabel()
         navigationController?.title = "demo of github"
         navigationController?.isNavigationBarHidden = true
         
@@ -60,6 +51,18 @@ class ViewController: UIViewController {
         saveButton.contentMode = .scaleAspectFit
         saveButton.tag = 2
         view.addSubview(saveButton)
+    }
+    
+    func setUpLabel() {
+        label.text = "hello"
+        label.textColor = .white
+        label.backgroundColor = .green
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        label.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        label.layer.cornerRadius = 10
+        label.layer.masksToBounds = true
+        view.addSubview(label)
     }
 
     @objc
