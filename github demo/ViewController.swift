@@ -61,7 +61,7 @@ class ViewController: UIViewController {
 
     @objc
     func clickButton() {
-        print("click")
+        print("you are tapped")
         label.text = "ok work"
     }
 
