@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         label.textAlignment = .center
         label.numberOfLines = 0
         label.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        label.layer.cornerRadius = 10
+        label.layer.masksToBounds = true
         view.addSubview(label)
         navigationController?.title = "demo of github"
         navigationController?.isNavigationBarHidden = true
