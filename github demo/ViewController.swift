@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         label.text = "hello"
+        label.textColor = .white
         label.backgroundColor = .green
         label.textAlignment = .center
         label.numberOfLines = 0
